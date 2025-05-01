@@ -22,7 +22,7 @@
 
         /* Header Section */
         header {
-            background: linear-gradient(rgba(0, 48, 135, 0.8), rgba(0, 48, 135, 0.8)), url('https://via.placeholder.com/1200x500/003087/FFF?text=CISA+Hero+Image') no-repeat center/cover;
+            background: linear-gradient(rgba(0, 48, 135, 0.8), rgba(0, 48, 135, 0.8)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=500&q=80') no-repeat center/cover;
             height: 500px;
             display: flex;
             flex-direction: column;
@@ -237,12 +237,24 @@
                 font-size: 1em;
             }
         }
+
+        /* Screen Reader Only Class */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <header role="banner">
-        <img src="https://via.placeholder.com/180x180/003087/FFF?text=CISA+Logo" alt="CISA Logo" class="logo">
+        <img src="https://www.cisa.gov/themes/custom/cisagov/images/Global/cisa-seal-200.png" alt="CISA Logo" class="logo">
         <h1>Discover CISA: America’s Cyber Defense Agency</h1>
         <p>Protecting our nation’s digital and physical infrastructure from evolving threats.</p>
         <a href="https://www.cisa.gov/about" class="cta-button" aria-label="Learn more about CISA">Learn More</a>
@@ -269,17 +281,17 @@
         <p>CISA’s work touches every aspect of modern life. Here’s how we protect you:</p>
         <div class="cards">
             <div class="card">
-                <img src="https://via.placeholder.com/60x60/003087/FFF?text=Lock" alt="Cybersecurity Icon">
+                <img src="https://img.icons8.com/ios-filled/60/003087/lock.png" alt="Cybersecurity Icon">
                 <h3>Cybersecurity</h3>
                 <p>We defend federal networks with tools like EINSTEIN and provide free cybersecurity resources to protect your data.</p>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/60x60/003087/FFF?text=Building" alt="Infrastructure Icon">
+                <img src="https://img.icons8.com/ios-filled/60/003087/city-building.png" alt="Infrastructure Icon">
                 <h3>Infrastructure Security</h3>
                 <p>We secure 16 critical sectors, from energy to healthcare, ensuring they withstand cyber and physical threats.</p>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/60x60/003087/FFF?text=Radio" alt="Communications Icon">
+                <img src="https://img.icons8.com/ios-filled/60/003087/radio.png" alt="Communications Icon">
                 <h3>Emergency Communications</h3>
                 <p>We ensure first responders stay connected during disasters, keeping communities safe.</p>
             </div>
@@ -314,7 +326,8 @@
     <footer role="contentinfo">
         <p>© 2025 Cybersecurity and Infrastructure Security Agency (CISA). All rights reserved.</p>
         <p>Sources: <a href="https://www.cisa.gov" target="_blank">CISA.gov</a> | <a href="https://www.dhs.gov" target="_blank">DHS.gov</a> | <a href="https://en.wikipedia.org/wiki/Cybersecurity_and_Infrastructure_Security_Agency" target="_blank">Wikipedia</a></p>
-        <p><img src="https://via.placeholder.com/1200x100/333/FFF?text=US+Map+Footer" alt="US Map showing interconnected cities" aria-describedby="footer-image-desc"></p>
+        <p>Images: <a href="https://www.cisa.gov" target="_blank">CISA.gov</a> | <a href="https://unsplash.com" target="_blank">Unsplash</a> | <a href="https://icons8.com" target="_blank">Icons8</a></p>
+        <p><img src="https://images.unsplash.com/photo-1610719433690-f8d8947f65eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=100&q=80" alt="US Map showing interconnected cities" aria-describedby="footer-image-desc"></p>
         <p id="footer-image-desc" class="sr-only">A map of the United States with glowing lines connecting cities, symbolizing CISA’s nationwide impact.</p>
     </footer>
 
