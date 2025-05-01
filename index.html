@@ -16,13 +16,13 @@
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: #f4f7fa;
+            color: #e0e0e0;
+            background: #1a1e2e;
         }
 
         /* Header Section */
         header {
-            background: linear-gradient(rgba(0, 48, 135, 0.8), rgba(0, 48, 135, 0.8)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=500&q=80') no-repeat center/cover;
+            background: linear-gradient(rgba(0, 48, 135, 0.85), rgba(0, 48, 135, 0.85)), url('https://images.unsplash.com/photo-1558499932-9609acb6f443?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=500&q=80') no-repeat center/cover;
             height: 500px;
             display: flex;
             flex-direction: column;
@@ -42,14 +42,14 @@
         header img.logo {
             width: 180px;
             margin-bottom: 20px;
-            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
         }
 
         header h1 {
             font-size: 3em;
             font-weight: 700;
             margin: 0;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
         }
 
         header p {
@@ -73,7 +73,7 @@
         .cta-button:hover {
             background: #D6001C;
             transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
         }
 
         /* Section Styling */
@@ -84,7 +84,7 @@
         }
 
         section h2 {
-            color: #003087;
+            color: #D6001C;
             font-size: 2.5em;
             font-weight: 700;
             text-align: center;
@@ -95,7 +95,7 @@
             font-size: 1.2em;
             max-width: 800px;
             margin: 0 auto 20px;
-            color: #555;
+            color: #b0b0b0;
         }
 
         /* Infographic Cards */
@@ -107,17 +107,17 @@
         }
 
         .card {
-            background: white;
+            background: #25293c;
             border-radius: 15px;
             padding: 30px;
             text-align: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
         }
 
         .card img {
@@ -133,28 +133,38 @@
 
         .card p {
             font-size: 1em;
-            color: #666;
+            color: #a0a0a0;
+        }
+
+        /* Section Images */
+        .section-image {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
 
         /* Impact Section */
         .impact {
-            background: linear-gradient(135deg, #003087, #0041b0);
+            background: linear-gradient(135deg, #1a1e2e, #25293c);
             color: white;
             text-align: center;
             padding: 80px 20px;
         }
 
         .impact p {
-            color: white;
+            color: #e0e0e0;
             font-size: 1.2em;
         }
 
         /* Get Involved Section */
         .get-involved {
-            background: #fff;
+            background: #25293c;
             border-radius: 10px;
             padding: 60px 20px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
 
         .get-involved ul {
@@ -169,20 +179,20 @@
         }
 
         .get-involved ul li a {
-            color: #003087;
+            color: #D6001C;
             font-weight: 700;
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         .get-involved ul li a:hover {
-            color: #D6001C;
+            color: #003087;
         }
 
         /* Footer */
         footer {
-            background: #222;
-            color: white;
+            background: #141622;
+            color: #e0e0e0;
             text-align: center;
             padding: 30px 20px;
             font-size: 0.9em;
@@ -264,6 +274,7 @@
     <section id="about" role="region" aria-labelledby="about-heading">
         <h2 id="about-heading">Who We Are</h2>
         <p>Welcome to the <strong>Cybersecurity and Infrastructure Security Agency (CISA)</strong>, a vital part of the Department of Homeland Security (DHS). Our mission is to <strong>lead the national effort to protect and strengthen America’s cyber and physical infrastructure</strong>. From securing elections to defending power grids, CISA ensures the systems you rely on every day are safe and resilient.</p>
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Digital network nodes representing cybersecurity" class="section-image">
         <p><strong>Our Goals:</strong></p>
         <ul>
             <li>Protect federal networks from cyber threats.</li>
@@ -296,6 +307,7 @@
                 <p>We ensure first responders stay connected during disasters, keeping communities safe.</p>
             </div>
         </div>
+        <img src="https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Power grid infrastructure at night" class="section-image">
         <p><em>Source: <a href="https://www.cisa.gov/topics" target="_blank">Topics | CISA</a></em></p>
         <p><a href="https://www.cisa.gov/topics" target="_blank" class="cta-button" aria-label="See CISA's work in action">See Our Work in Action</a></p>
     </section>
@@ -304,6 +316,7 @@
     <section class="impact" role="region" aria-labelledby="impact-heading">
         <h2 id="impact-heading">Our Impact: Strengthening National Security</h2>
         <p>CISA is a cornerstone of homeland security, protecting the systems Americans rely on daily. We <strong>prevent cyber attacks</strong>, <strong>enhance public safety</strong>, and <strong>build resilience</strong> across critical infrastructure. Without CISA, our digital and physical infrastructure would be vulnerable to adversaries like nation-state hackers and cybercriminals.</p>
+        <img src="https://images.unsplash.com/photo-1536697246787-1f7ae568d89a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Emergency response team coordinating during a crisis" class="section-image">
         <p><strong>Did you know?</strong> CISA secures elections, stops ransomware, and ensures power stays on during crises.</p>
         <p><em>Source: <a href="https://www.cisa.gov" target="_blank">Home Page | CISA</a></em></p>
         <p><a href="https://www.cisa.gov/national-risk-management" target="_blank" class="cta-button" aria-label="Discover CISA's impact">Discover Our Impact</a></p>
