@@ -98,6 +98,17 @@
             color: #b0b0b0;
         }
 
+        /* Centered List */
+        .centered-list {
+            text-align: center;
+        }
+
+        .centered-list ul {
+            display: inline-block;
+            text-align: left;
+            list-style-position: inside;
+        }
+
         /* Infographic Cards */
         .cards {
             display: grid;
@@ -234,8 +245,8 @@
         <h2 id="about-heading">Who We Are</h2>
         <p>Welcome to the <strong>Cybersecurity and Infrastructure Security Agency (CISA)</strong>, a vital part of the Department of Homeland Security (DHS). Our mission is to <strong>lead the national effort to protect and strengthen America’s cyber and physical infrastructure</strong>. From securing elections to defending power grids, CISA ensures the systems you rely on every day are safe and resilient.</p>
         <p><strong>Our Goals:</strong></p>
-        <div style="text-align: center;">
-            <ul style="display: inline-block; text-align: left; list-style-position: inside;">
+        <div class="centered-list">
+            <ul>
                 <li>Protect federal networks from cyber threats.</li>
                 <li>Strengthen critical infrastructure like energy and transportation.</li>
                 <li>Coordinate emergency communications during crises.</li>
@@ -267,4 +278,3 @@
     </footer>
 </body>
 </html>
-
